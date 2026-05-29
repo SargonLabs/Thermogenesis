@@ -1,0 +1,1872 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5f06d888-a6f0-41ee-af48-625561e4787d")
+	(paper "A4")
+	(title_block
+		(title "Thermogenesis Breadboard Prototype")
+		(date "2026-05-29")
+		(rev "v0.1")
+		(company "Sargon Labs")
+		(comment 1 "William Janczewski")
+		(comment 2 "Breadboard proof-of-concept — as built")
+		(comment 3 "CERN-OHL-S-2.0")
+		(comment 4 "github.com/SargonLabs/Thermogenesis")
+	)
+	(lib_symbols
+		(symbol "Thermogenesis:ESP32-S3"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ESP32-S3-WROOM-1"
+				(at 0 -16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ESP32-S3_0_1"
+				(rectangle
+					(start -10.16 15.24)
+					(end 10.16 -15.24)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ESP32-S3_1_1"
+				(pin power_in line
+					(at -12.7 12.7 0)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 10.16 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "GPIO4/TOUCH"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 2.54 0)
+					(length 2.54)
+					(name "GPIO8/SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "GPIO9/SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "GPIO18/LED"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "5V/VBUS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 12.7 180)
+					(length 2.54)
+					(name "USB_D+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 10.16 180)
+					(length 2.54)
+					(name "USB_D-"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "WIFI"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -2.54 180)
+					(length 2.54)
+					(name "EN/RST"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "BOOT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Thermogenesis:MLX90614"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MLX90614ESF"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MLX90614_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MLX90614_1_1"
+				(pin power_in line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Thermogenesis:SK6812"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SK6812_RGBW_x15"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SK6812_0_1"
+				(rectangle
+					(start -6.35 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "SK6812_1_1"
+				(pin power_in line
+					(at -8.89 2.54 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -8.89 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Thermogenesis:USB_C"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "USB-C"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "USB_C_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "USB_C_1_1"
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VBUS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "D+"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "+3V3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "GND"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "NOTES:\n- 5V/VBUS pin inactive on UART USB port\n- All components powered from 3.3V LDO\n- GY-906 has onboard 10k I2C pull-ups\n- Touch threshold: 27000 (ESP32-S3 ADC)\n- Sensing: conduction through glass wall"
+		(exclude_from_sim no)
+		(at 177.8 149.352 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "0e57940d-c4ca-4971-8088-f6286d04b764")
+	)
+	(text "CAPACITIVE TOUCH:\nCopper foil tape on inner\nsurface of glass dome.\nWire to GPIO4."
+		(exclude_from_sim no)
+		(at 95 180 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "7a9d90a6-220e-40e3-b231-5e2971e83319")
+	)
+	(wire
+		(pts
+			(xy 142.7 105) (xy 142.7 77.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f985d1d-ddb1-42fa-bf6f-b88fbff2852e")
+	)
+	(wire
+		(pts
+			(xy 107.5 90) (xy 107.5 160)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14990185-56e7-46fb-963f-e0052805a005")
+	)
+	(wire
+		(pts
+			(xy 117.3 84.92) (xy 105 84.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c0318b4-fd1d-41d6-8502-3bc0d066b083")
+	)
+	(wire
+		(pts
+			(xy 121.11 157.46) (xy 121.11 152.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d626e67-8dee-4143-9cc7-0f4ac45421b6")
+	)
+	(wire
+		(pts
+			(xy 221.11 87.46) (xy 221.11 82.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "253efc4c-3999-46af-8589-79208a80fa6b")
+	)
+	(wire
+		(pts
+			(xy 117.3 92.54) (xy 221.11 92.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a9e0745-4e2d-4998-a751-46f0d8b0b30b")
+	)
+	(wire
+		(pts
+			(xy 62.62 105) (xy 142.7 105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310cbc0b-4ccc-4f5b-a1e9-642b59076183")
+	)
+	(wire
+		(pts
+			(xy 117.3 90) (xy 107.5 90)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "372af805-3d4a-4daa-9e53-f09f2f82a4fd")
+	)
+	(wire
+		(pts
+			(xy 107.5 160) (xy 138.89 160)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a168acb-e9f2-4996-bf31-84dec388ad85")
+	)
+	(wire
+		(pts
+			(xy 110 162.54) (xy 121.11 162.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602af156-7fc0-41d6-9de4-b4dbc04fc6a6")
+	)
+	(wire
+		(pts
+			(xy 62.62 92.54) (xy 62.62 105)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6df8014d-4de3-4e76-88b4-09fb38bf26ed")
+	)
+	(wire
+		(pts
+			(xy 62.62 77.3) (xy 117.3 77.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72f4eafd-9929-4c4f-a13a-20c693204a18")
+	)
+	(wire
+		(pts
+			(xy 114.76 72.22) (xy 114.76 77.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a641149-02f8-4e87-a380-f230daa75e77")
+	)
+	(wire
+		(pts
+			(xy 62.62 77.3) (xy 62.62 90)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8788766f-eb3d-45ea-b498-43c96184a310")
+	)
+	(wire
+		(pts
+			(xy 105 84.92) (xy 105 175)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac870227-0298-445f-9414-f9310aefd84a")
+	)
+	(wire
+		(pts
+			(xy 117.3 87.46) (xy 110 87.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9cab84-451b-4a5e-840b-2ac85fe324d6")
+	)
+	(wire
+		(pts
+			(xy 121.11 160) (xy 121.11 165.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b51f8628-3c25-493c-99a5-b0e3d6fcf547")
+	)
+	(wire
+		(pts
+			(xy 110 87.46) (xy 110 162.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bac9adfc-4b55-4ab7-bff8-a73254ac5b23")
+	)
+	(wire
+		(pts
+			(xy 62.62 79.84) (xy 117.3 79.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e254166e-118a-4e5f-a538-d3b5f6348057")
+	)
+	(wire
+		(pts
+			(xy 114.76 79.84) (xy 114.76 84.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3940cb6-62ee-4bb5-8791-fdc6a6b68f8c")
+	)
+	(wire
+		(pts
+			(xy 221.11 90) (xy 221.11 95.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6a4db6e-c5b5-4c81-be71-9e49649714ed")
+	)
+	(label "TOUCH"
+		(at 105 170 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5a77333e-bbdc-416f-bbee-c21b1d81809c")
+	)
+	(label "SDA"
+		(at 110 130 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7333c24b-e35d-45c4-bafc-8a39d9db7aac")
+	)
+	(label "LED_DATA"
+		(at 170 92.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c70f6bc8-4115-4170-983a-65e8a91b1852")
+	)
+	(label "SCL"
+		(at 107.5 130 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c8e2e94a-6d6b-4113-b62b-54a6d37533b0")
+	)
+	(symbol
+		(lib_id "Thermogenesis:MLX90614")
+		(at 130 160 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "15bc6f3d-658a-42a5-b986-0f1d346a2d8e")
+		(property "Reference" "U?"
+			(at 130 142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MLX90614ESF (GY-906)"
+			(at 130 178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130 160 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa3f2b72-f830-49f4-b2a1-58de4a861637")
+		)
+		(pin "2"
+			(uuid "53735078-f720-41bd-b734-07aede02d16c")
+		)
+		(pin "3"
+			(uuid "4be704e5-5dfd-4e37-85c4-820dbbce7812")
+		)
+		(pin "4"
+			(uuid "4b5e52f8-b9ac-4666-a911-15276805d27c")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 221.11 82.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e822b29-b926-49fe-baee-3272166da239")
+		(property "Reference" "#PWR?"
+			(at 221.11 79.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 221.11 79.38 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 221.11 82.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 221.11 82.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 221.11 82.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc62b931-2af0-4840-aef8-584522d21a54")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.11 165.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "362a9612-7bdd-4f24-b9b3-3d9e541d3431")
+		(property "Reference" "#PWR?"
+			(at 121.11 162.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.11 162.08 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.11 165.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.11 165.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.11 165.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "909f1bd8-5219-471f-9dfe-b7b44f486d5a")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Thermogenesis:SK6812")
+		(at 230 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5dd24fbc-09c1-4288-adb7-2e6a43a019f6")
+		(property "Reference" "LED?"
+			(at 230 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK6812 x15"
+			(at 230 108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 230 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 230 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 230 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a71cc27-3a11-408e-8c55-6cd72884475c")
+		)
+		(pin "2"
+			(uuid "8d488b57-ec7a-4674-b187-06be56037053")
+		)
+		(pin "3"
+			(uuid "bbba9bb3-408c-4fad-87e1-30e8d5c27556")
+		)
+		(pin "4"
+			(uuid "cd2ad0be-73cb-4172-a0e5-a74169023969")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "LED?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Thermogenesis:USB_C")
+		(at 55 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d0eb9df-893e-499b-9125-06bd279f35df")
+		(property "Reference" "J?"
+			(at 55 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "USB-C (UART)"
+			(at 55 108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 55 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 55 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f83091b7-8a8b-40ac-910b-652915f87d56")
+		)
+		(pin "2"
+			(uuid "98b4a956-02c8-4de5-8490-b04074f99383")
+		)
+		(pin "3"
+			(uuid "bfd9b4a0-0aa3-44bb-bd98-aef63b1e7ec2")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "J?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Thermogenesis:ESP32-S3")
+		(at 130 90 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "845c19c5-a25d-4520-ae39-fa6b893fde1b")
+		(property "Reference" "U?"
+			(at 130 72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP32-S3-WROOM-1"
+			(at 130 108 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 130 90 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "244eb494-d3d0-4b4c-b49a-a646e77b853c")
+		)
+		(pin "2"
+			(uuid "8f71f0ce-bbb1-4945-a416-586d4e77217b")
+		)
+		(pin "3"
+			(uuid "de271410-88ec-4298-a00c-dfa07c69e891")
+		)
+		(pin "4"
+			(uuid "26275fc8-5808-4c05-96b6-1e8616eed346")
+		)
+		(pin "5"
+			(uuid "a168dd91-ab58-4fed-8123-0a0db2559de4")
+		)
+		(pin "6"
+			(uuid "9323004c-9f0f-45e3-8ef7-69fecc48bc38")
+		)
+		(pin "7"
+			(uuid "ba982395-624e-4dcc-bb14-21f6ae4f1182")
+		)
+		(pin "8"
+			(uuid "9e6f8b35-e7bd-4af6-8cd5-219b3041fa8f")
+		)
+		(pin "9"
+			(uuid "be6eb686-a33d-4be2-9468-0a627d6dc0d9")
+		)
+		(pin "10"
+			(uuid "cd4600e3-c469-42d6-9deb-a981c9460c69")
+		)
+		(pin "11"
+			(uuid "d7831102-9dca-4c73-aa12-ebd8fb484dc1")
+		)
+		(pin "12"
+			(uuid "b64e0fc9-4028-4b0d-aa21-24394f8914ad")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 121.11 152.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c331763-c4d4-4e5c-83c8-c046a1bd2fc0")
+		(property "Reference" "#PWR?"
+			(at 121.11 149.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 121.11 149.38 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.11 152.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.11 152.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.11 152.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27e0f72f-c194-4c51-a494-c9f963769652")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 221.11 95.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d9699a77-49c5-4de2-8d01-cabb8c7af203")
+		(property "Reference" "#PWR?"
+			(at 221.11 92.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 221.11 92.08 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 221.11 95.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 221.11 95.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 221.11 95.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ac6aea46-1426-4b09-ad63-65a51f47786f")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.76 84.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd2184b5-0bc6-4797-9fae-ab32b1a2fc22")
+		(property "Reference" "#PWR?"
+			(at 114.76 81.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.76 81.92 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.76 84.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.76 84.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.76 84.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51df1dc8-335b-4c37-b789-33ee7f44b030")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 114.76 72.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1debb2c-01f8-4bfd-b1fa-748b9d01b40c")
+		(property "Reference" "#PWR?"
+			(at 114.76 69.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 114.76 69.22 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.76 72.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.76 72.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.76 72.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "06ac1d14-93a0-425c-ba73-28b261a65962")
+		)
+		(instances
+			(project "thermogenesis_breadboard_v0.1 (1)"
+				(path "/5f06d888-a6f0-41ee-af48-625561e4787d"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
